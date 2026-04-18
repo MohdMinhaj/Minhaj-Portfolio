@@ -1,0 +1,77 @@
+.education {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 50px;
+
+  background: linear-gradient(90deg, #d97706, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* GRID layout (side by side) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD STYLE */
+.card {
+  background: #1f1f1f;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: 0.4s ease;
+}
+
+/* glow border effect */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(45deg, #f59e0b, transparent);
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+/* hover effect 🔥 */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* text */
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.card span {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 📱 Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

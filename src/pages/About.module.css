@@ -1,0 +1,86 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px;
+  gap: 50px;
+}
+
+/* LEFT */
+.left {
+  width: 55%;
+  animation: slideLeft 1s ease;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #f59e0b, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* RIGHT */
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideRight 1s ease;
+}
+
+/* CARDS */
+.card {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+
+  box-shadow: 0 0 0 transparent;
+  transition: 0.4s ease;
+}
+
+/* HOVER MAGIC 🔥 */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
+}
+
+/* ANIMATIONS */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+}
