@@ -19,7 +19,7 @@ function Home() {
     
     <div className={styles.socials}>
       <a href="https://github.com/yourusername" target="_blank">
-       <a href=""> <i className="fa-brands fa-github"></i></a>
+       <a href="https://github.com/MohdMinhaj"> <i className="fa-brands fa-github"></i></a>
       </a>
 
       <a href="https://linkedin.com/in/yourusername" target="_blank">

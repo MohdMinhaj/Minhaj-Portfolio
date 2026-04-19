@@ -7,7 +7,9 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <h2 className={styles.logo}>Minhaj Portfolio</h2>
+      <a href="/" className={styles.logo}>
+  <h2>Minhaj Portfolio</h2>
+</a>
 
       {/* Links */}
       <ul className={`${styles.links} ${menuOpen ? styles.active : ''}`}>

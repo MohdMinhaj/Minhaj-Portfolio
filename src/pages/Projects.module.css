@@ -1,0 +1,81 @@
+.projects {
+  padding: 80px 40px;
+  background: #f2eae0;
+  text-align: center;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* TEXT */
+.overlay h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.overlay button {
+  padding: 10px 20px;
+  border: none;
+  background: #f59e0b;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background: white;
+}
