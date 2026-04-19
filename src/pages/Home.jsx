@@ -22,15 +22,15 @@ function Home() {
        <a href="https://github.com/MohdMinhaj"> <i className="fa-brands fa-github"></i></a>
       </a>
 
-      <a href="https://linkedin.com/in/yourusername" target="_blank">
+      <a href="https://www.linkedin.com/in/md-minhaj-017102290/" target="_blank">
         <i className="fa-brands fa-linkedin"></i>
       </a>
 
-      <a href="https://instagram.com/yourusername" target="_blank">
+      <a href="https://www.instagram.com/mohdminhaj.08/" target="_blank">
         <i className="fa-brands fa-instagram"></i>
       </a>
 
-      <a href="mailto:youremail@gmail.com">
+      <a href="mailto:mohmmedminhaj321@gmail.com">
         <i className="fa-solid fa-envelope"></i>
       </a>
     </div>
