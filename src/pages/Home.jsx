@@ -1,5 +1,6 @@
 import styles from './Home.module.css'
 import myPic from '../assets/mypic.png'
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -14,8 +15,10 @@ function Home() {
       Currently learning backend with Java to become a full-stack developer.
     </p>
 
-  <a href="/contact"><button className={styles.btn}>Contact Me</button>
-</a>  
+  
+<Link to="/contact">
+  <button className={styles.btn}>Contact Me</button>
+</Link>
     
     <div className={styles.socials}>
       <a href="https://github.com/yourusername" target="_blank">
