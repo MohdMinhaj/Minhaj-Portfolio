@@ -10,17 +10,17 @@ function Projects() {
     {
       title: "Smart Voting System",
       image: voting,
-      live: "https://your-voting-link.vercel.app",
+      live: "https://smart-voting-system-pi.vercel.app/",
     },
     {
       title: "Todo List",
       image: todo,
-      live: "https://your-todo-link.vercel.app",
+      live: "https://todo-list-theta-azure-95.vercel.app/",
     },
     {
       title: "Tic Tac Toe",
       image: tic,
-      live: "https://your-tic-link.vercel.app",
+      live: "https://tic-tac-toe-puce-two.vercel.app/",
     },
   ];
 
@@ -35,10 +35,9 @@ function Projects() {
 
             <img src={project.image} alt={project.title} />
 
-            {/* 👇 NAME BELOW IMAGE */}
             <h2 className={styles.projectName}>{project.title}</h2>
 
-            {/* 👇 HOVER BUTTON */}
+         
             <div className={styles.overlay}>
               <a href={project.live} target="_blank">
                 <button>Live Demo 🚀</button>
